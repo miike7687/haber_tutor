@@ -67,9 +67,9 @@ header {
   background-color: dodgerblue;
 }
 
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 .nav-masthead {
   float: right;
@@ -156,4 +156,49 @@ main {
 .card {
   margin-top: 40px;
   margin-left: 250px;
+}
+
+.form-container {
+  width: 80%;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + label {
+  background: #999;
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  padding: 0 0 0 0px;
+}
+input[type="checkbox"]:checked + label {
+  background: #0080ff;
+  text-decoration: aqua;
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  padding: 0 0 0 0px;
+}
+input[type="checkbox"]:checked + label + label {
+  text-decoration: aqua;
+}
+
+label p {
+  display: inline block;
+}
+.contain {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.check-label {
+  color: black;
+  font-size: 17px;
+}
+
+.checkbox-title {
+  margin-top: 20px;
 }
