@@ -38,6 +38,16 @@ $("#form-submit").click(function (event) {
     console.log("School City: " + schoolCity);
     checkbox();
     alert("Thank you for submitting! Mr. Haber will get back to you soon!");
+    localStorage.setItem("Parent", parent);
+    localStorage.setItem("Parent Email", parentEmail);
+    localStorage.setItem("Student", student);
+    localStorage.setItem("Student Grade", grade);
+    localStorage.setItem("Home City", city);
+    localStorage.setItem("Home State", state);
+    localStorage.setItem("Home Zip", zip);
+    localStorage.setItem("Student's School", school);
+    localStorage.setItem("Student's School City", schoolCity);
+    localStorage.setItem("Subjects", checkbox());
   }
 });
 
@@ -58,4 +68,5 @@ function checkbox() {
     }
   }
   console.log(selectArray);
+  return selectArray;
 }
