@@ -203,3 +203,27 @@ label p {
 .checkbox-title {
   margin-top: 20px;
 }
+
+table,
+th,
+td {
+  border: 2px solid black;
+}
+
+#month {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  color: orangered;
+  margin-top: 40px;
+}
+
+.calendar-container {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.day-name {
+  background-color: orange;
+  text-align: center;
+}
