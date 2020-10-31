@@ -1,3 +1,8 @@
+$(".calendar-cell").append(
+  $("<button>4:30pm</button>").attr("class", "early-button"),
+  $("<button>7:00pm</button>").attr("class", "late-button")
+);
+
 $("#form-submit").click(function (event) {
   event.preventDefault();
   const parent = $("#inputContact").val();

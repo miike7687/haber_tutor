@@ -227,3 +227,26 @@ td {
   background-color: orange;
   text-align: center;
 }
+
+.early-button {
+  margin-left: 8px;
+  margin-top: 8px;
+  vertical-align: center;
+}
+
+.early-button::after {
+  content: "\a";
+  white-space: pre;
+}
+
+.late-button {
+  margin-left: 8px;
+  vertical-align: center;
+}
+
+td {
+  padding: 0px;
+}
+.top {
+  vertical-align: top;
+}
