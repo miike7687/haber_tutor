@@ -226,6 +226,7 @@ td {
 .day-name {
   background-color: orange;
   text-align: center;
+  width: 12%;
 }
 
 .early-button {
@@ -249,4 +250,11 @@ td {
 }
 .top {
   vertical-align: top;
+}
+.date {
+  vertical-align: top;
+  padding-bottom: 15px;
+}
+.date-first {
+  padding-bottom: 2px;
 }

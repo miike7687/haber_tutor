@@ -3,6 +3,58 @@ $(".calendar-cell").append(
   $("<button>7:00pm</button>").attr("class", "late-button")
 );
 
+$(".early-button").each(function () {
+  arr = [];
+  $(this).on("click", function () {
+    arr.splice(0, arr.length);
+    console.log(arr);
+    let name = prompt(
+      "Enter the student's full name who will be taking this slot!"
+    );
+    let subject = prompt(
+      "What subject does " + name + " need help with at this time?"
+    );
+    $(this).hide();
+    arr.push("4:30pm: ");
+    arr.push(name + ": ");
+    arr.push(subject);
+    console.log(arr);
+    const newString = arr.join("");
+    console.log(newString);
+    appendText(newString);
+    // console.log(info);
+    // $(".calendar-cell").each(function () {
+    //   $(this).on("click", function () {
+    //     $(this).append(arr);
+    //   });
+    // });
+  });
+});
+function appendText(data) {
+  $("span").each(function () {
+    $(this).append(data);
+  });
+}
+
+$(".late-button").each(function () {
+  $(this).on("click", function () {
+    let newName = prompt(
+      "Enter the student's full name who will be taking this slot!"
+    );
+    let newSubject = prompt(
+      "What subject does " + newName + " need help with at this time?"
+    );
+    $(this).hide();
+    // let info = "7:30pm= " + name + ": " + subject;
+    // console.log(info);
+    $(".calendar-cell").each(function () {
+      $(this).on("click", function () {
+        $(this).append("7:30pm= " + newName + ": " + newSubject);
+      });
+    });
+  });
+});
+
 $("#form-submit").click(function (event) {
   event.preventDefault();
   const parent = $("#inputContact").val();
