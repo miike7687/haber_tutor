@@ -31,9 +31,7 @@ $(".early-button").each(function () {
   });
 });
 function appendText(data) {
-  $("span").each(function () {
-    $(this).append(data);
-  });
+  $("span").append(data);
 }
 
 $(".late-button").each(function () {
